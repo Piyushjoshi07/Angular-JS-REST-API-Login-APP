@@ -1,0 +1,9 @@
+
+
+<form ng-app="myApp" name="myForm">
+    Email:<br>
+    <input type="email" name="myAddress" placeholder="email id" ng-model="textemail"></input>
+    <span ng-show="myForm.myAddress.$error.email">Not a valid e-mail address</span><br>
+    Password:<br>
+    <input type="password" name="pass" placeholder="Password" ng-model="textpassword"></input><br>
+    <input type="submit" ng-click="verify()" value="Login"></input>
